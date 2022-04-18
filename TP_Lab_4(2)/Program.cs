@@ -7,12 +7,24 @@ namespace TP_Lab_4_2_
     {
         static void Main(string[] args)
         {
+            //РЕАЛИЗАЦИЯ ЧЕРЕЗ MAZEBUILDER
             MazeBuilder1 mazeBuilder1 = new MazeBuilder1();
             mazeBuilder1.SetCharsOuterWall('5', '7');
             mazeBuilder1.SetCharsInteriorWall('6', '8');
             mazeBuilder1.SetInteriorWallHP(90);
             mazeBuilder1.CreateMaze();
             Console.WriteLine(mazeBuilder1.ToString());
+
+            //РЕАЛИЗАЦИЯ ЧЕРЕЗ WALLBUILDER
+            NewMaze newMaze = new NewMaze();
+            newMaze.OutWallB.CreateWall();
+            newMaze.IntWallB.CreateWall();
+            newMaze.OutWallB.SetHorizIntWall('_');
+            newMaze.OutWallB.SetVertIntWall('|');
+            newMaze.IntWallB.SetVertOutWall('I');
+            newMaze.IntWallB.SetHorizOutWall('>');
+            newMaze.MazePattern = new char[NewMaze.MAZE_SIZE, NewMaze.MAZE_SIZE];
+            Console.WriteLine(newMaze.ToString());
         }
     }
 }

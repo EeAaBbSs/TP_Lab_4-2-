@@ -4,17 +4,15 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    public abstract class Builder
+    public abstract class MazeBuilder
     {
         protected const int MAZE_SIZE = 15;
         private Maze maze = new Maze();
-
         public Maze Maze
         {
             get { return maze; }
             set { maze = value; }
         }
-
         public abstract void CreateMaze();
         public abstract void SetCharsOuterWall(char ohw, char ovw);
         public abstract void SetCharsInteriorWall(char ihw, char ivw);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    public class MazeBuilder1 : Builder
+    public class MazeBuilder1 : MazeBuilder
     {
         public override void CreateMaze()
         {
