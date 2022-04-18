@@ -4,8 +4,7 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    class OuterWall : Wall
+    public class OuterWall : Wall
     {
-
     }
 }

@@ -4,17 +4,9 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    class Wall
+    public class Wall
     {
-        private char _vertWall = '|';
-        private char _horWall = '-';
-        public char VertInterWall
-        {
-            get { return _vertWall; }
-        }
-        public char HorInterWall
-        {
-            get { return _horWall; }
-        }
+        public char VertWall { get; set; }
+        public char HorWall { get; set; }
     }
 }

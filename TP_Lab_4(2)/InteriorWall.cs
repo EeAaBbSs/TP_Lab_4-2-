@@ -4,13 +4,8 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    class InteriorWall : Wall
+    public class InteriorWall : Wall
     {
-        private int _hp = 100;
-        public int HP
-        {
-            get { return _hp; }
-            set { _hp = value; }
-        }
+        public int HP { get; set; }
     }
 }
