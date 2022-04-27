@@ -6,9 +6,12 @@ namespace TP_Lab_4_2_
 {
     public class InteriorWallBuilder : WallBuilder
     {
-        public override Wall CreateWall()
+        public InteriorWallBuilder()
         {
             Wall = new InteriorWall();
+        }
+        public override Wall CreateWall()
+        {
             return Wall;
         }
 

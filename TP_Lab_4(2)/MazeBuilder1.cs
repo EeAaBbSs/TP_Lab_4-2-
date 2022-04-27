@@ -20,10 +20,10 @@ namespace TP_Lab_4_2_
             Maze.InteriorWall.HorWall = ihw;
             Maze.InteriorWall.VertWall = ivw;
         }
-        public override void SetInteriorWallHP(int num)
-        {
-            Maze.InteriorWall.HP = num;
-        }
+        //public override void SetInteriorWallHP(int num)
+        //{
+        //    Maze.InteriorWall.HP = num;
+        //}
         public override string ToString()
         {
             string picture = "";

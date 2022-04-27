@@ -6,7 +6,12 @@ namespace TP_Lab_4_2_
 {
     public class Wall
     {
+        public uint HP { get; set; }
         public char VertWall { get; set; }
         public char HorWall { get; set; }
+        public virtual void SetHP(uint hp)
+        {
+            HP = hp;
+        }
     }
 }

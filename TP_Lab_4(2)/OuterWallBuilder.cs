@@ -6,9 +6,12 @@ namespace TP_Lab_4_2_
 {
     public class OuterWallBuilder : WallBuilder
     {
-        public override Wall CreateWall()
+        public OuterWallBuilder()
         {
             Wall = new OuterWall();
+        }
+        public override Wall CreateWall()
+        {
             return Wall;
         }
 
@@ -31,5 +34,10 @@ namespace TP_Lab_4_2_
         {
             Wall.VertWall = b;
         }
+
+        //public override void SetHP(uint hp)
+        //{
+        //    Wall.HP = 0;
+        //}
     }
 }

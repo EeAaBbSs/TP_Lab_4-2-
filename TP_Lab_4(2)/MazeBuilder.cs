@@ -16,6 +16,6 @@ namespace TP_Lab_4_2_
         public abstract void CreateMaze();
         public abstract void SetCharsOuterWall(char ohw, char ovw);
         public abstract void SetCharsInteriorWall(char ihw, char ivw);
-        public abstract void SetInteriorWallHP(int num);
+        //public abstract void SetInteriorWallHP(int num);
     }
 }

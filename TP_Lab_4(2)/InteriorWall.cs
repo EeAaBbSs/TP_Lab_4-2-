@@ -6,6 +6,9 @@ namespace TP_Lab_4_2_
 {
     public class InteriorWall : Wall
     {
-        public int HP { get; set; }
+        public override void SetHP(uint hp)
+        {
+            base.SetHP(hp);
+        }
     }
 }
