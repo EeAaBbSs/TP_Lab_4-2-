@@ -17,12 +17,10 @@ namespace TP_Lab_4_2_
 
         public override void SetHorizIntWall(char a)
         {
-            Wall.HorWall = a;
         }
 
         public override void SetVertIntWall(char b)
         {
-            Wall.VertWall = b;
         }
 
         public override void SetHorizOutWall(char a)
@@ -35,9 +33,8 @@ namespace TP_Lab_4_2_
             Wall.VertWall = b;
         }
 
-        //public override void SetHP(uint hp)
-        //{
-        //    Wall.HP = 0;
-        //}
+        public override void SetHP(uint hp)
+        {
+        }
     }
 }

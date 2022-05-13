@@ -9,9 +9,6 @@ namespace TP_Lab_4_2_
         public uint HP { get; set; }
         public char VertWall { get; set; }
         public char HorWall { get; set; }
-        public virtual void SetHP(uint hp)
-        {
-            HP = hp;
-        }
+        public char RoomChar { get; set; }
     }
 }

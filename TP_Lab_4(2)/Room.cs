@@ -4,7 +4,8 @@ using System.Text;
 
 namespace TP_Lab_4_2_
 {
-    public class InteriorWall : Wall
+    class Room : Wall
     {
+        public Room(char symb) => RoomChar = symb;
     }
 }
