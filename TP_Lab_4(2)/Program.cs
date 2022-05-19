@@ -18,13 +18,6 @@ namespace TP_Lab_4_2_
 
             //РЕАЛИЗАЦИЯ ЧЕРЕЗ WALLBUILDER
             NewMaze newMaze = new NewMaze();
-            //newMaze.OutWallB.CreateWall();
-            //newMaze.IntWallB.CreateWall();
-            //newMaze.OutWallB.SetHorizIntWall('_');
-            //newMaze.OutWallB.SetVertIntWall('|');
-            //newMaze.IntWallB.SetVertOutWall('I');
-            //newMaze.IntWallB.SetHorizOutWall('>');
-            //newMaze.MazePattern = new char[NewMaze.MAZE_SIZE, NewMaze.MAZE_SIZE];
             newMaze.MazeWalled = new Wall[NewMaze.MAZE_SIZE, NewMaze.MAZE_SIZE];
             Console.WriteLine(newMaze.ToString());
         }
